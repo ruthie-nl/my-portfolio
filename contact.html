@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruthie's portfolio site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<style>
+     *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            text-decoration:none;
+            font-family: 'Cinzel', serif;
+            
+        }
+        
+        html{
+            scroll-behavior: smooth;
+            animation: ease-in-out;
+            animation: ease-in-out 0.3s timing-function delay iteration-count direction fill-mode;
+        
+  background: url("https://images.pexels.com/photos/4466492/pexels-photo-4466492.jpeg") no-repeat center center fixed;
+  background-size: cover; 
+}  
+        .scroll-up-btn{
+            position:fixed;
+            height:45px;
+            width:42px;
+            background:black;
+            right:30px;
+            bottom:30px;
+            text-align:center;
+            line-height:45px;
+            color:black;
+            z-index: 9999;
+            font-size:30px;
+            border-radius: 6px;
+            cursor:pointer;
+            opacity:0;
+            pointer-events:none;
+            transition: all 0.3s ease;
+        }
+        .scroll-up-btn.show{
+            opacity:1;
+            pointer-events:auto;
+            bottom:30px; 
+        }
+        .max-width{
+            max-width:1300px;
+            padding:0 80px;
+            margin:auto;
+        }
+        .navbar{
+            position:fixed;
+            align-content: flex-end;
+            padding:15px 0;
+            width:100%;
+            transition: all 0.3s ease;
+            z-index:999;
+        
+        }
+        .navbar.sticky{
+            padding:15px 0;
+            background:black;
+        }
+        .navbar .max-width{
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+        .navbar .logo a{
+            font-size:38px;
+            font-weight:600;
+            color:black;
+          
+        
+        }
+        .navbar .logo a span{
+            color:black;
+            transition: all 0.3s ease;
+        }
+        .navbar.sticky .logo a span{
+            color:black;
+        }
+        .navbar .navbar-menu li {
+            list-style:none;
+            display:inline-block;
+            justify-content: flex-end;
+            align-content:right;
+        }
+        .navbar .navbar-menu li  {
+            color:black;
+            font: size 25px;
+            font-weight:500;
+            margin-left:5px;
+            transition:.3s ease; 
+        }
+        .navbar .navbar-menu li a:hover{
+        color:beige;
+        }
+        .navbar.sticky .navbar-menu li a:hover{
+            color:beige;
+         
+}
+.navbar .navbar-menu  a{
+        font-size: 15px;
+        margin:5px;
+        color:black;
+        align-items:left;
+        justify-content:flex-end;
+    }
+    .navbar .nav-icons a:hover{
+        color:#fde5d6;
+    }
+.navbar .navbar-menu .links button{
+    justify-content: flex-end;
+}
+.contact{
+        width: auto;
+            display:flex;
+            background:center;
+            background-size:cover;
+            height:100%;
+            height: 100vh;
+          
+        text-align: center;
+        opacity: 100;
+        justify-content: center;
+        } 
+        .contact .contact-content{
+            margin: auto 0 auto 40px;
+        }
+        .contact .contact-content .contact-logo{
+            font-size:50px;
+            font-weight:bold;
+            opacity: 2;
+        background-position: center; 
+        justify-content: center;
+        }
+        .contact .contact-content .contact-items .item1 a {
+            font-size: 90px;
+            display:inline-block;
+            justify-content: space-evenly;
+            align-content:center;
+            color: black;
+            justify-items: center;
+            
+        }
+       
+</style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div>
+            <div class="max width">
+            <div class="navbar-menu">
+                <div class="navbar-logo"><h1>RUTHIE</h1></div>
+            <ul>
+                <li><a href="main.html" class="nav-link"><span>Home</span></a></li>
+                <li><a href="about.html" class="nav-link"><span>About</span></a></li>
+                <li><a href="resume.html" class="nav-link"><span>Resume</span></a></li>
+                <li><a href="portfolio.html" class="nav-link"><span>Portfolio</span></a></li>
+            </ul>
+               
+            </div> 
+        </div>
+            </div>
+        </div>
+
+    </nav> 
+    <div class="contact">
+        <div class="contact-content">
+            <div class="contact-logo">CONTACT</div>
+            <div class="contact-items">
+<div class="item1">
+                        <a href="https://www.linkedin.com/ruthdauda" class="fa fa-linkedin" ></a>
+                        
+                        <a href="https://github/@ruthie_nl" class="fa fa-github"></a>
+                        
+                        <a href="https://gmail.com" class="fa fa-envelope"></a>
+                        
+                        <a href="https://twitter.com/@__ruthie__"class="fa fa-twitter"></a>
+</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
